@@ -262,7 +262,9 @@ function ProductList({ onHomeClick }) {
     };
 
     const handleContinueShopping = (e) => {
-        e.preventDefault();
+        if (e) {
+            e.preventDefault();
+        }
         setShowCart(false);
     };
 

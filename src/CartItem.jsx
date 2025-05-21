@@ -18,8 +18,8 @@ const CartItem = ({ onContinueShopping }) => {
     return total.toFixed(2);
   };
 
-  const handleContinueShopping = (e) => {
-    e.preventDefault();
+  const handleContinueShopping = () => {
+    // Call the passed onContinueShopping prop directly
     onContinueShopping();
   };
 
